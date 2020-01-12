@@ -3,13 +3,13 @@ spring:
     active:
     - dev
 ---
+server:
+  port: 7001 #注册中心占用7001端口
+
 spring:
   profiles: dev
   application:
     name: microservicecloud-config-eureka-client
-
-server:
-  port: 7001 #注册中心占用7001端口
 
 eureka:
   instance:
@@ -24,13 +24,13 @@ eureka:
       #设置与Eureka Server交互的地址查询服务和注册服务
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 ---
+server:
+  port: 7001 #注册中心占用7001端口
+  
 spring:
   porfiles: test
   application:
     name: microservicecloud-config-eureka-client
-
-server:
-  port: 7001 #注册中心占用7001端口
 
 eureka:
   instance:
