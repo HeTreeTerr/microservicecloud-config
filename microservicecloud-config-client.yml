@@ -25,4 +25,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
-my-name: hss02
+my-name: hss03
